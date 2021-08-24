@@ -1,0 +1,264 @@
+:root {
+    --blue: #027ACB;
+    --darkblue: #040BD6;
+
+}
+
+.home--header {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.peddy {
+    width: 300px;
+    margin-top: 2%;
+    margin-left: 2%;
+    height: auto;
+    border-radius: 50%;
+    border: 11px solid var(--blue);
+    animation: slideInFromLeftImg 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: all 0.3s ease-in-out;
+}
+
+.peddy:hover {
+    width: 305px;   
+    transform: rotate(5deg);
+
+}
+
+.header--items {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+}
+
+.header--hand {
+    margin-right: 10%;
+    margin-top: 3%;
+    color: var(--blue);
+    font-size: xx-large;
+    opacity: 0;
+    animation: waveHand 1.5s linear infinite;
+    
+}
+
+.header--text {
+    color: var(--blue);
+    margin-top: 7%;
+    margin-right: 2%;
+    opacity: 0;
+    animation: fadeIn 1.2s forwards;
+    animation-delay: 0.4s;
+}
+
+.header--text--exit {
+    color: var(--blue);
+    margin-top: 7%;
+    margin-right: 2%;
+    opacity: 1;
+    animation: fadeOut 0.3s forwards;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -2%;
+}
+
+.btn {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    border-color: var(--blue);
+    border-radius: 500px;
+    width: fit-content;
+    background-image: linear-gradient(to right, white 50%, var(--blue) 0%);
+    background-size: 200% 200%;
+    background-position: right;
+    transition: all .4s ease;
+    cursor: pointer;
+
+
+}
+
+.btn:hover {
+    color: var(--blue);
+    background-position: left;
+
+    
+}
+
+
+.aboutme {
+    animation: slideInFromLeft 0.8s cubic-bezier(1, -0.1, 0.4, 1.76);
+}
+
+.projects {
+    margin-top: 0.5%;
+    animation: slideInFromLeft 0.9s cubic-bezier(1, -0.1, 0.4, 1.76);
+}
+
+.resume {
+    margin-top: 0.5%;
+    animation: slideInFromLeft 1s cubic-bezier(1, -0.1, 0.4, 1.76);
+}
+
+.home--logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 5%;
+}
+
+.b--logo {
+    height: 125px;
+    width: 400px;
+    margin-left: 3%;
+    opacity: 0;
+    animation: fadeIn 1.2s forwards;
+    animation-delay: 0.4s;
+}
+
+.b--logo--exit {
+    height: 125px;
+    width: 400px;
+    margin-left: 3%;
+    opacity: 1;
+    animation: fadeOut 0.3s forwards;
+}
+
+
+.gitty {
+    color: var(--blue);
+    font-size: 50px;
+    margin-top: 3%;
+    margin-left: 50%;
+    opacity: 0;
+    animation: fadeIn 1.2s forwards;
+    animation-delay: 0.4s;
+}
+
+.gitty--exit {
+    color: var(--blue);
+    font-size: 50px;
+    margin-top: 3%;
+    margin-left: 50%;
+    opacity: 1;
+    animation: fadeOut 0.3s forwards;
+}
+
+.linkdy {
+    color: var(--blue);
+    font-size: 50px;
+    margin-top: 3%;
+    margin-left: 2%;
+    opacity: 0;
+    animation: fadeIn 1.2s forwards;
+    animation-delay: 0.4s;
+}
+
+.linkdy--exit {
+    color: var(--blue);
+    font-size: 50px;
+    margin-top: 3%;
+    margin-left: 2%;
+    opacity: 1;
+    animation: fadeOut 0.3s forwards;
+}
+
+.gitty:hover {
+    transform: rotate(35deg);
+}
+
+.linkdy:hover {
+    transform: rotate(35deg);
+}
+
+.footy {
+    display: flex;
+    justify-content: center;
+    color: var(--blue);
+    font-size: 18px;
+    margin-top: 2%;
+    margin-left: 1%;
+    opacity: 0;
+    animation: fadeIn 1.2s forwards;
+    animation-delay: 0.4s;
+}
+
+.footy--exit {
+    display: flex;
+    justify-content: center;
+    color: var(--blue);
+    font-size: 18px;
+    margin-top: 2%;
+    margin-left: 1%;
+    opacity: 1;
+    animation: fadeOut 0.3s forwards;
+}
+
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-500%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromLeftImg {
+    0% {
+        transform: translateY(-5000%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes waveHand {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-45deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes enterDiag {
+    0% {
+        transform: translatex(300px) translatey(-300px);
+    }
+    90% {
+        transform: translatex(-10px) translatey(10px);
+    }
+    100% {
+        transform: translatex(0px) translatey(0px);   
+    }
+}
