@@ -7,4 +7,4 @@ const PeddyBerk = () => {
     )
 }
 
-export default PeddyBerk    ;
+export default PeddyBerk;
