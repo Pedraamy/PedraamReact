@@ -21,10 +21,16 @@ const Button = ({children, type, buttonStyle, onClick}) => {
                 s.style.margin = "auto"
                 s.style.transform = "scale(20, 30)";
                 s.style.zIndex = "1001";
+                s.style.backgroundPosition = "left";
+                s.style.pointerEvents = "none";
             }
             for (const s of document.getElementsByClassName("projects--curr")){
                 s.classList.remove("projects--curr");
                 s.classList.add("projects--curr--exit");
+            }
+            for (const s of document.getElementsByClassName("projects--header")){
+                s.classList.remove("projects--header");
+                s.classList.add("projects--header--exit");
             }
         }
         else {

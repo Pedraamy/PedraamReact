@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, useHistory } from 'react-router-dom';
+import styled from "styled-components";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';

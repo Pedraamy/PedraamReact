@@ -8,7 +8,6 @@ import { useHistory } from 'react-router-dom';
 import img1 from "../Components/Images/pchess.png"
 import img2 from "../Components/Images/pstars.png"
 import img3 from "../Components/Images/pgitlet.png"
-
 import Footer from "../Components/Footer.js";
 
 
@@ -23,7 +22,7 @@ function Projects() {
     config: {duration: 300},
     from: {transform: "rotateZ(360deg)", opacity: "0"},
     to: {transform: "rotateZ(0deg)", opacity: "1"},
-    delay: 800
+    delay: 400,
   });
   const [index, set] = useState(0);
   const itemC = slides[index];
@@ -77,6 +76,7 @@ function Projects() {
         </button>
         <div className="button--right"><Button buttonStyle="incur" onClick={buttonR}>&gt;</Button></div>
       </div>
+      <Footer />
     </div>
   );
 }

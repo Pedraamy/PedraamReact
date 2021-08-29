@@ -1,12 +1,14 @@
 import '../App.css';
 import Button from "../Components/Button.js";
 import PedImg from '../Components/Images/PedImg.js';
+import Glassprof from '../Components/Glassprof';
 import Blogo from '../Components/Images/Blogo';
 import Footer from "../Components/Footer.js";
 
 import {FaLinkedin, FaGithub, FaHandPaper} from "react-icons/fa";
 import Homeheader from '../Components/Homeheader';
 import "./Home.css";
+import PeddyBerk from '../Components/Images/PeddyBerk';
 
 
 function Home() {
