@@ -31,6 +31,14 @@ const Button = ({children, type, buttonStyle, onClick}) => {
                 s.classList.remove("projects--header");
                 s.classList.add("projects--header--exit");
             }
+            for (const s of document.getElementsByClassName("button--left")){
+                s.classList.remove("button--left");
+                s.classList.add("button--exit");
+            }
+            for (const s of document.getElementsByClassName("button--right")){
+                s.classList.remove("button--right");
+                s.classList.add("button--exit");
+            }
         }
         else {
             for (const s of document.getElementsByClassName(`${currS}`)){

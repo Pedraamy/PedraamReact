@@ -69,12 +69,12 @@ function Projects() {
       {transitions((style) =>
       <animated.h1 className="projects--header" style={style}>{textC}</animated.h1>)}
       <div className="mid--box">
-        <div className="button--left"><Button buttonStyle="incur" onClick={buttonL}>&lt;</Button></div>
+        <animated.div className="button--left" style={spinIn}><Button buttonStyle="incur" onClick={buttonL}>&lt;</Button></animated.div>
         <button className="projects--container" onClick={imageClick}>
           {transitions((style) => 
           <animated.img className="projects--curr" src={itemC} style={style} onMouseEnter={addHov} onMouseLeave={rmHov} alt="pic" />)}
         </button>
-        <div className="button--right"><Button buttonStyle="incur" onClick={buttonR}>&gt;</Button></div>
+        <animated.div className="button--right" style={spinIn}><Button buttonStyle="incur" onClick={buttonR}>&gt;</Button></animated.div>
       </div>
       <Footer />
     </div>
