@@ -28,8 +28,8 @@ function Home() {
       </div>
       <div className="home--logos">
         <Blogo />
-        <FaGithub className="gitty"/>
-        <FaLinkedin className="linkdy"/>
+        <a href="https://github.com/Pedraamy" target="_blank"><FaGithub className="gitty" /></a>
+        <a href="https://github.com/Pedraamy" target="_blank"><FaLinkedin className="linkdy"/></a>
       </div>
       <Footer />
     </div>

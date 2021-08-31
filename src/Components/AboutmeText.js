@@ -19,10 +19,15 @@ const AboutmeText = () => {
         I liked this role particularly becuase I got to utilize both my backgrounds in CS and Biology.
         I used labrotory techniques like Western blotting to purify proteins from different cell lines.
         I then used <b>Pandas to aggregate and transform large amounts of protein data</b>.
-        This effort made the data more digestable for my Postdoc to analyze.<br/><br/>
+        This effort made the data more digestable for my post-doc to analyze.<br/><br/>
         More recently, I have been spending more time on side projects.
-        Over the summer I created a fully functional Chess game and wrote an AI for it using the minimax algorithm.
-        Currently, I am building this website from the ground up as an effort to better learn React.
+        Something that I have been having a lot of fun with.
+        Seeing your ideas come to life using the actual skills you learned in college is very rewarding, to say the least.
+        You can see a detailed description of some of my projects plus a video demonstration in the projects section of the website.
+        My favorite part about side projects is they enable you to learn technologies that aren't really taught in a traditional CS curriculum.
+        As much as I love CS theory, the unfortunate part of academia is the lack of focus on modern techlonogies.
+        CS academia never actually covers important modern technologies that are at the forefront of todays tech industry.
+        So I taken it upon myself to self-learn many of them before I graduate.
         </p>
     )
 }

@@ -14,7 +14,6 @@ const Button = ({children, type, buttonStyle, onClick}) => {
         if (toRoute.length === 0){
             for (const s of document.getElementsByClassName("home")){
                 s.style.color = "white";
-                s.style.backgroundImage = "white";
                 s.style.border = "0.5px solid #027ACB"
                 s.style.borderRadius = "4%"
                 s.style.position = "fixed"
@@ -42,6 +41,8 @@ const Button = ({children, type, buttonStyle, onClick}) => {
                 s.style.margin = "auto"
                 s.style.transform = "scale(5.88, 11)";
                 s.style.zIndex = "1000";
+                s.style.backgroundPosition = "left";
+                s.style.pointerEvents = "none";
             }
             for (const s of document.getElementsByClassName("peddy")){
                 s.style.opacity = "0";
