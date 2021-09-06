@@ -18,7 +18,7 @@
     font-style: bold;
     display: flex;
     justify-content: center;
-    margin-top: -0.15%;
+    margin-top: 0.2%;
     animation: slideFromRight 0.4s cubic-bezier(0.93,-0.01, 1, 1.07);   
 
 }

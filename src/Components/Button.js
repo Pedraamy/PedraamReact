@@ -71,6 +71,10 @@ const Button = ({children, type, buttonStyle, onClick}) => {
                 s.classList.remove("linkdy");
                 s.classList.add("linkdy--exit");
             }
+            for (const s of document.getElementsByClassName("glassy")){
+                s.classList.remove("glassy");
+                s.classList.add("glassy--exit");
+            }
         }
         for (const s of document.getElementsByClassName("footy")){
             s.classList.remove("footy");

@@ -52,6 +52,21 @@
     margin-bottom: 1.5%;
     border-radius: 5%;
     border: 9px solid var(--blue);
+}
+
+.projects--container--exit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 1050px;
+    height: 618px;
+    margin: auto;
+    margin-top: -0.45%;
+    margin-bottom: 1.5%;
+    border-radius: 5%;
+    border: 9px solid var(--blue);
+    animation: fadeOut 0.3s forwards;
 
 }
 
@@ -68,6 +83,10 @@
 .button--exit {
     margin: auto;
     opacity: 0;
+    animation: fadeOut 0.3s forwards;
+}
+
+.home--exit {
     animation: fadeOut 0.3s forwards;
 }
 

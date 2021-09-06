@@ -1,0 +1,14 @@
+:root {
+    --blue: #027ACB;
+    --darkblue: #040BD6;
+
+}
+
+.gitviddy {
+    border: 5px solid var(--blue);
+    border-radius: 50%;
+}
+
+.gbutton {
+    margin-top: 50%;
+}

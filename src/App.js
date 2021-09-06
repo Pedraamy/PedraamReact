@@ -3,6 +3,10 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Home from "./Home/Home.js"
 import Aboutme from './Aboutme/Aboutme.js';
 import Projects from './Projects/Projects';
+import Gitlet from "./Gitlet/Gitlet";
+import Chess from "./Chess/Chess";
+import Worldgenerator from "./Worldgenerator/Worldgenerator";
+import Glassed from './Glassed';
 
 
 function App() {
@@ -18,6 +22,18 @@ function App() {
             </Route>
             <Route path="/projects">
               <Projects />
+            </Route>
+            <Route path="/gitlet">
+              <Gitlet />
+            </Route>
+            <Route path="/chess">
+              <Chess />
+            </Route>
+            <Route path="/worldgenerator">
+              <Worldgenerator />
+            </Route>
+            <Route path="/glassed">
+              <Glassed />
             </Route>
           </Switch>
         </div>

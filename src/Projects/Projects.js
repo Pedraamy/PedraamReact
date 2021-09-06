@@ -17,7 +17,7 @@ function Projects() {
   const history = useHistory()
   const slides = [img1, img2, img3]
   const names = ["Chess (Python)", "World Generator (Java)", "Gitlet (Java)"]
-  const addies = ["/chess", "/worldgen", "/gitlet"]
+  const addies = ["/chess", "/worldgenerator", "/gitlet"]
   const spinIn = useSpring({
     config: {duration: 300},
     from: {transform: "rotateZ(360deg)", opacity: "0"},
@@ -41,8 +41,37 @@ function Projects() {
   const buttonR = () => set(state => state != slides.length-1 ? state+1 : 0);
 
   const imageClick = () => {
+    for (const s of document.getElementsByClassName("projects--curr")){
+      s.classList.remove("projects--curr");
+      s.classList.add("projects--curr--exit");
+    }
+    for (const s of document.getElementsByClassName("projects--header")){
+        s.classList.remove("projects--header");
+        s.classList.add("projects--header--exit");
+    }
+    for (const s of document.getElementsByClassName("button--left")){
+        s.classList.remove("button--left");
+        s.classList.add("button--exit");
+    }
+    for (const s of document.getElementsByClassName("button--right")){
+        s.classList.remove("button--right");
+        s.classList.add("button--exit");
+    }
+    for (const s of document.getElementsByClassName("footy")){
+      s.classList.remove("footy");
+      s.classList.add("footy--exit");
+    }
+    for (const s of document.getElementsByClassName("home")){
+      s.classList.remove("home");
+      s.classList.add("home--exit");
+    }
+    for (const s of document.getElementsByClassName("projects--container")){
+      s.classList.remove("projects--container");
+      s.classList.add("projects--container--exit");
+    }
+
     const addy = addies[index]
-    history.push(`${addy}`)
+    setTimeout(() => history.push(`${addy}`), 400)
   }
 
   const addHov = () => {

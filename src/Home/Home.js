@@ -4,7 +4,8 @@ import PedImg from '../Components/Images/PedImg.js';
 import Glassprof from '../Components/Glassprof';
 import Blogo from '../Components/Images/Blogo';
 import Footer from "../Components/Footer.js";
-import PR from "../Components/PedraamResume.pdf"
+import PR from "../Components/PedraamResume.pdf";
+import { useSpring, animated } from 'react-spring';
 
 import {FaLinkedin, FaGithub, FaHandPaper} from "react-icons/fa";
 import Homeheader from '../Components/Homeheader';
@@ -18,9 +19,10 @@ function Home() {
   return (
     <div className="home">
       <div className="home--header">
-        <PedImg />
+        <div className="glassy">
+          <Glassprof />
+        </div>
         <div className="header--items">
-          <FaHandPaper id="ped--hand" className="header--hand"/>
           <Homeheader />
         </div>
       </div>
