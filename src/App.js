@@ -6,7 +6,6 @@ import Projects from './Projects/Projects';
 import Gitlet from "./Gitlet/Gitlet";
 import Chess from "./Chess/Chess";
 import Worldgenerator from "./Worldgenerator/Worldgenerator";
-import Glassed from './Glassed';
 
 
 function App() {
@@ -31,9 +30,6 @@ function App() {
             </Route>
             <Route path="/worldgenerator">
               <Worldgenerator />
-            </Route>
-            <Route path="/glassed">
-              <Glassed />
             </Route>
           </Switch>
         </div>

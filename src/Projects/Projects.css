@@ -30,7 +30,7 @@
     justify-content: center;
     margin-top: 0.35%;
     opacity: 0;
-    animation: fadeOut 0.3s forwards;
+    animation: fadeOut 0.15s forwards;
 }
 
 .mid--box {
@@ -66,7 +66,7 @@
     margin-bottom: 1.5%;
     border-radius: 5%;
     border: 9px solid var(--blue);
-    animation: fadeOut 0.3s forwards;
+    animation: fadeOut 0.15s forwards;
 
 }
 
@@ -83,11 +83,11 @@
 .button--exit {
     margin: auto;
     opacity: 0;
-    animation: fadeOut 0.3s forwards;
+    animation: fadeOut 0.15s forwards;
 }
 
 .home--exit {
-    animation: fadeOut 0.3s forwards;
+    animation: fadeOut 0.15s forwards;
 }
 
 .projects--curr {
@@ -97,7 +97,7 @@
 
 .projects--curr--exit {
     opacity: 0;
-    animation: fadeOut 0.3s forwards;
+    animation: fadeOut 0.15s forwards;
 }
 
 .projects--curr--hover {

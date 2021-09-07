@@ -111,9 +111,13 @@
     animation: slideInFromLeft 0.9s cubic-bezier(1, -0.1, 0.4, 1.76);
 }
 
+.resume {
+    margin-top: 0.5%;
+    animation: slideInFromLeft 1s cubic-bezier(1, -0.1, 0.4, 1.76);   
+}
+
 .incur {
     margin-top: 0.5%;
-    animation: slideInFromLeft 1s cubic-bezier(1, -0.1, 0.4, 1.76);
 }
 
 .home--logos {

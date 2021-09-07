@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from 'react-router-dom';
 
-const bStyles = ["home", "aboutme", "projects", "resume", "incur"];
+const bStyles = ["home", "aboutme", "projects", "resume", "incur", "projb"];
 
   
 
@@ -9,7 +9,7 @@ const bStyles = ["home", "aboutme", "projects", "resume", "incur"];
 const Button = ({children, type, buttonStyle, onClick}) => {
     const currS = bStyles.includes(buttonStyle) ? buttonStyle : bStyles[0];
     const history = useHistory();
-    const toRoute = currS === "home" ? "" : currS; 
+    var toRoute = currS === "home" ? "" : currS;
     function expand() {
         if (toRoute.length === 0){
             for (const s of document.getElementsByClassName("home")){
@@ -38,6 +38,20 @@ const Button = ({children, type, buttonStyle, onClick}) => {
             for (const s of document.getElementsByClassName("button--right")){
                 s.classList.remove("button--right");
                 s.classList.add("button--exit");
+            }
+            for (const s of document.getElementsByClassName("content--box")){
+                s.style.animation = "fadeOut 0.3s forwards";
+            }
+        }
+        else if (currS == "projb"){
+            for (const s of document.getElementsByClassName("projb")){
+                s.style.color = "white";
+                s.style.border = "0.5px solid #027ACB"
+                s.style.borderRadius = "4%"
+                s.style.transform = "scale(20, 30)";
+                s.style.zIndex = "1001";
+                s.style.backgroundPosition = "left";
+                s.style.pointerEvents = "none";
             }
         }
         else {
@@ -80,11 +94,14 @@ const Button = ({children, type, buttonStyle, onClick}) => {
             s.classList.remove("footy");
             s.classList.add("footy--exit");
         }
+        if (toRoute === "projb"){
+            toRoute = "projects"
+        }
         setTimeout(() => history.push(`/${toRoute}`), 400);
         
     }
     return (
-        <button className= {`btn ${currS}`} onClick={currS === "incur" ? onClick : expand} type={type}>
+        <button className= {`btn ${currS}`} onClick={(currS === "incur" || currS === "resume")? onClick : expand} type={type}>
             {children}
         </button>
     )

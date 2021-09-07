@@ -1,13 +1,11 @@
 import '../App.css';
 import Button from "../Components/Button.js";
-import PedImg from '../Components/Images/PedImg.js';
 import Glassprof from '../Components/Glassprof';
 import Blogo from '../Components/Images/Blogo';
 import Footer from "../Components/Footer.js";
 import PR from "../Components/PedraamResume.pdf";
-import { useSpring, animated } from 'react-spring';
 
-import {FaLinkedin, FaGithub, FaHandPaper} from "react-icons/fa";
+import {FaLinkedin, FaGithub} from "react-icons/fa";
 import Homeheader from '../Components/Homeheader';
 import "./Home.css";
 
@@ -29,7 +27,7 @@ function Home() {
       <div className="buttons">
         <Button buttonStyle="aboutme">About Me</Button>
         <Button buttonStyle="projects">Projects</Button>
-        <Button buttonStyle="incur" onClick={openPDF}>Resume</Button>
+        <Button buttonStyle="resume" onClick={openPDF}>Resume</Button>
       </div>
       <div className="home--logos">
         <Blogo />
