@@ -86,7 +86,7 @@ function Gitlet() {
         config: {duration: 500},
         from: {transform: "translateX(-300%)", opacity: "0"},
         to: {transform: "translateX(0)", opacity: "1"}
-    })
+    });
   return (
     <div className="gitlet">
         <HeaderContainer>
