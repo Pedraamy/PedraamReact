@@ -32,7 +32,7 @@ function Home() {
       <div className="home--logos">
         <Blogo />
         <a href="https://github.com/Pedraamy" target="_blank"><FaGithub className="gitty" /></a>
-        <a href="https://www.linkedin.com/in/pedraam-nikzad-046302138/" target="_blank"><FaLinkedin className="linkdy"/></a>
+        <a href="https://www.linkedin.com/in/pedraam/" target="_blank"><FaLinkedin className="linkdy"/></a>
       </div>
       <Footer />
     </div>
