@@ -37,8 +37,6 @@ function Projects() {
   const [index, set] = useState(0);
   const itemC = slides[index];
   const textC = names[index];
-  const increment = () => set(state => (state+1) % slides.length);
-  useInterval(increment, 3500);
 
   const transitions = useTransition(index, {
     from: { opacity: 0, transform: "scale(0.8)"},
