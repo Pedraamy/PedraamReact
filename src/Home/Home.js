@@ -31,7 +31,7 @@ function Home() {
       </div>
       <div className="home--logos">
         <Blogo />
-        <a href="https://github.com/Pedraamy" target="_blank"><FaGithub className="gitty" /></a>
+        <a href="https://github.com/pedraamn" target="_blank"><FaGithub className="gitty" /></a>
         <a href="https://www.linkedin.com/in/pedraam/" target="_blank"><FaLinkedin className="linkdy"/></a>
       </div>
       <Footer />
